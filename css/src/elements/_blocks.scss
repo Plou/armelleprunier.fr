@@ -1,0 +1,35 @@
+@use '../settings/dimensions' as *;
+
+////
+/// Headings
+///
+/// @group Elements
+///
+////
+
+section {
+  margin: 70px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/// Contents
+p, li, td, th, textarea, caption, pre, blockquote, label, input, select, textarea {
+  font-size: var(--fz-text);
+  line-height: 1.5;
+}
+
+td p, td .bodytext { margin: 0; }
+strong, optgroup { font-weight: var(--fw-bold); }
+
+p {
+  margin: 25px 0;
+}
+
+li { margin: 5px 0; }

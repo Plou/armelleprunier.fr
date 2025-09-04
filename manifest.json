@@ -1,0 +1,21 @@
+{
+  "short_name": "Armelle Prunier",
+  "name": "Armelle Prunier - Background & Concept Artist",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/logo_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/"
+}

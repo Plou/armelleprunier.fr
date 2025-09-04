@@ -1,0 +1,11 @@
+@use '../settings/dimensions' as *;
+
+.content {
+  padding-top: 40px;
+}
+
+@media #{$media-medium} {
+}
+
+@media #{$media-large} {
+}

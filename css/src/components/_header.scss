@@ -1,0 +1,16 @@
+@use '../settings/dimensions' as *;
+
+.header {
+    padding: 40px;
+    width: max-content;
+}
+
+.header-title {
+    margin-bottom: 0;
+}
+.header-subtitle {
+    margin: 0;
+    text-align: right;
+    font-size: 1.6rem;
+    color: var(--grey)
+}

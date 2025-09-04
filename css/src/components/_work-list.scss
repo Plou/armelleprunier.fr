@@ -1,0 +1,18 @@
+@use '../settings/dimensions' as *;
+
+.work-list {
+  margin: 60px 0 0 250px;
+  padding: 0;
+  max-width: 870px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 420px)) ;
+  gap: var(--gap);
+}
+
+.work-list__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

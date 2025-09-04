@@ -1,1 +1,2 @@
-# armelleprunier.fr
+# Armelle Prunier 
+Background & Concept Artist

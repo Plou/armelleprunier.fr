@@ -1,0 +1,16 @@
+@use '../settings/dimensions' as *;
+
+////
+/// Layout of the page
+///
+/// @group Elements
+///
+////
+
+/// Text default font and color
+body {
+    background: var(--white);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    color: var(--black);
+}
