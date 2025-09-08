@@ -5,11 +5,10 @@
   padding: var(--page-padding);
   max-width: var(--container-width);
   list-style: none;
-  display: grid;
-  gap: var(--gap);
-
   
   @media (min-width: 920px) {
+    display: grid;
+    gap: var(--gap);
     grid-template-columns: 220px auto;
   }
   
