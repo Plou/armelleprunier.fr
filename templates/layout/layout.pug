@@ -37,8 +37,10 @@ html(lang="en")
 
   body
     header.header
-      h1.header-title Armelle Prunier
-      p.header-subtitle Background &amp; Concept Artist
+      block header
+        h1.header-title
+          a.header__link(href='/') Armelle Prunier
+        p.header-subtitle Background &amp; Concept Artist
 
     .content
       block content

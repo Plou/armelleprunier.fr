@@ -1,0 +1,5 @@
+.gallery {
+    display: flex;
+    gap: calc(var(--gap) * 3);
+    flex-direction: column;
+}

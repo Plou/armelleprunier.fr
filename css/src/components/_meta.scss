@@ -1,0 +1,30 @@
+.meta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.meta__title {
+    order: 1;
+    margin: 0;
+    font-size: 2.4rem;
+    margin-bottom: calc(var(--gap) * 2);
+    line-height: 1.2;
+}
+
+.meta__category {
+    order: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--grey);
+    font-weight: var(--fw-light);
+    line-height: 1.2;
+    margin-bottom: calc(var(--gap) * .5);
+}
+
+.meta__job {
+    order: 3;
+    margin: 0;
+    font-size: 2.0rem;
+    font-weight: var(--fw-light);
+    line-height: 1.2;
+}

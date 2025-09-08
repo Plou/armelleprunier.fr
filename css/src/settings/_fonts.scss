@@ -1,6 +1,7 @@
 :root {
     --ff-text: 'Inter', sans-serif;
-    --ff-heading: 'Baskerville', serif;
+    --ff-heading: var(--ff-text);
+    --ff-logo: 'Baskerville', serif;
 
     --fw-light: 300;
     --fw-regular: 400;
@@ -8,5 +9,4 @@
 
     --fz-text: 2.0rem;
     --fz-title: 2.4rem;
-    --fz-title: 1.4rem;
 }

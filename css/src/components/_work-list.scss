@@ -1,12 +1,14 @@
 @use '../settings/dimensions' as *;
+.work-list-container {
+  grid-column: 2;
+}
 
 .work-list {
-  margin: 60px 0 0 250px;
+  margin: 0;
   padding: 0;
-  max-width: 870px;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 420px)) ;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: var(--gap);
 }
 

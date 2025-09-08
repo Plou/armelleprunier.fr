@@ -17,7 +17,7 @@ const browserify = require('browserify')
 const babelify = require('babelify')
 const uglify = require('gulp-uglify')
 const browserSync = require('browser-sync').create()
-
+const urlBuilder = require('gulp-url-builder')
 
 
 gulp.task('pug', function(){
@@ -30,6 +30,20 @@ gulp.task('pug', function(){
       basedir: '.'
     }))
     .pipe(gulp.dest('.'))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('works', function(){
+  return gulp.src('templates/page/works/*.pug')
+    .pipe(plumber({errorHandler: notify.onError({
+      message: "<%= error.message %>",
+      title: "Template compilation"
+    })}))
+    .pipe(pug({
+      basedir: './works'
+    }))
+    .pipe( urlBuilder() )
+    .pipe(gulp.dest('./works'))
     .pipe(browserSync.stream())
 })
 
@@ -77,7 +91,7 @@ gulp.task('minifyCss', gulp.series('scss', function(){
     .pipe(gulp.dest('css'))
 }))
 
-gulp.task('minifyHtml', gulp.series('minifyCss', 'pug', function(){
+gulp.task('minifyHtml', gulp.series('minifyCss', 'pug', 'works', function(){
   return gulp.src('./*.html')
     .pipe(plumber({errorHandler: notify.onError({
       message: "<%= error.message %>",
@@ -130,10 +144,10 @@ gulp.task('serve', function() {
 
     watcher.scss.on('all', gulp.parallel('scss'))
     watcher.js.on('all', gulp.parallel('js'))
-    watcher.pug.on('all', gulp.parallel('pug'))
+    watcher.pug.on('all', gulp.parallel('pug', 'works'))
     watcher.assets.on('all', gulp.parallel('pug'))
 })
 
 gulp.task('build', gulp.parallel('minifyHtml', 'minifyCss', 'minifyJs'))
 
-gulp.task('default', gulp.parallel( 'serve', 'js', 'scss', 'pug'))
+gulp.task('default', gulp.parallel( 'serve', 'js', 'scss', 'pug', 'works'))
