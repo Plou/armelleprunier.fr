@@ -1,5 +1,14 @@
 .gallery {
     display: flex;
-    gap: calc(var(--gap) * 3);
     flex-direction: column;
+    gap: calc(var(--gap));
+
+
+    @media (min-width: 480px) {
+        gap: calc(var(--gap) * 3);
+    }
+
+    @media (min-width: 920px) {
+        text-align: right;
+    }
 }

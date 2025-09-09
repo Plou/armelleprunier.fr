@@ -3,6 +3,11 @@
 .header {
     padding: var(--page-padding);
     width: max-content;
+    margin-bottom: calc(var(--gap) * 3);
+
+    @media (min-width: 480px) {
+        margin-bottom: 0;
+    }
 }
 
 .header-title {
@@ -10,6 +15,7 @@
     margin: 0;
     font-size: 4.5em;
     line-height: 1;
+
     @media (min-width: 480px) {
         font-size: 5.7em;
     }
