@@ -1,42 +1,51 @@
 extends ../layout/layout.pug
 
-
-block preload
-
-block script
-  script(src='/js/main.js')
+block header
+  h1.header-title
+    a.header__link(href='/') Armelle Prunier
+  p.header-subtitle Lead décor couleur, Décoratrice &amp; Matte painter
 
 block content
 
   section#works.work-list-container
     ul.work-list
         li.work-list__item
-          a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.jpg')").work
+          a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.png')").work
             .work__meta
               h2.work__title
                 = "Quentin Blake's Box of Treasure"
+        li.work-list__item
+          a(href="/works/les-secrets-de-mon-pere/", style="background-image: url('/img/works/les-secrets-de-mon-pere/les-secrets-de-mon-pere_thumbnail.png')").work
+            .work__meta
+              h2.work__title
+                = "Les secrets de mon père"
+        li.work-list__item
+          a(href="/works/lastman-heroes/", style="background-image: url('/img/works/lastman-heroes/lastman-heroes_thumbnail.png')").work
+            .work__meta
+              h2.work__title
+                = "Lastman Heroes saison 2 "
+        li.work-list__item
+          a(href="/works/mars-express/", style="background-image: url('/img/works/mars-express/mars-express_thumbnail.png')").work
+            .work__meta
+              h2.work__title
+                = "Mars Express"
+        li.work-list__item
+          a(href="/works/josep/", style="background-image: url('/img/works/josep/josep_thumbnail.png')").work
+            .work__meta
+              h2.work__title
+                = "Josep"
+        li.work-list__item
+          a(href="/works/lastman/", style="background-image: url('/img/works/lastman/lastman_thumbnail.png')").work
+            .work__meta
+              h2.work__title
+                = "Lastman"
+        li.work-list__item
+          a(href="/works/avril-et-le-monde-truque/", style="background-image: url('/img/works/avril-et-le-monde-truque/avril-et-le-monde-truque_thumbnail.png')").work
+            .work__meta
+              h2.work__title
+                = "Avril et le monde truqué"
         //- li.work-list__item
-        //-   a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.jpg')").work
+        //-   a(href="/works/project-name/", style="background-image: url('/img/works/project-name/project-name_thumbnail.png')").work
         //-     .work__meta
         //-       h2.work__title
-        //-         = "Quentin Blake's Box of Treasure"
-        //- li.work-list__item
-        //-   a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.jpg')").work
-        //-     .work__meta
-        //-       h2.work__title
-        //-         = "Quentin Blake's Box of Treasure"
-        //- li.work-list__item
-        //-   a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.jpg')").work
-        //-     .work__meta
-        //-       h2.work__title
-        //-         = "Quentin Blake's Box of Treasure"
-        //- li.work-list__item
-        //-   a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.jpg')").work
-        //-     .work__meta
-        //-       h2.work__title
-        //-         = "Quentin Blake's Box of Treasure"
-        //- li.work-list__item
-        //-   a(href="/works/quentin-blake/", style="background-image: url('/img/works/quentin-blake/quentin-blake_thumbnail.jpg')").work
-        //-     .work__meta
-        //-       h2.work__title
-        //-         = "Quentin Blake's Box of Treasure"
+        //-         = "ProjectName"

@@ -1,24 +1,15 @@
 extends ../../layout/layout.pug
 
-
-block preload
-
-block script
-  script(src='/js/main.js')
-
-block header
-    p.header-title
-        a.header__link(href='/') Armelle Prunier
-    p.header-subtitle Background &amp; Concept Artist
-
+block title
+  title Armelle Prunier - Quentin Blake's Box of Treasures
 
 block content
-
     section#work.meta
         h1.meta__title Quentin Blake's Box of Treasures
-        p.meta__category TV Show
+        p.meta__category Série
         p.meta__job Référence et décors couleur
 
     section#gallery.gallery 
         img(src="/img/works/quentin-blake/quentin-blake_1.jpg", alt="")
         img(src="/img/works/quentin-blake/quentin-blake_2.jpg", alt="")
+        img(src="/img/works/quentin-blake/quentin-blake_3.jpg", alt="")

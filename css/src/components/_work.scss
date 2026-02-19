@@ -18,9 +18,9 @@
 }
 
 .work__meta {
-    padding: var(--gap);
-    background-color: rgba(255,255,255,.4);
-    backdrop-filter: blur(2px);
+    padding: var(--gap) calc(var(--gap) / 2);
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(7px);
     opacity: 0;
     transform: translate3d(0, 5px,0);
     transition: 300ms transform, 300ms opacity;
@@ -30,5 +30,5 @@
     margin: 0;
     text-align: center;
     font-size: 1.6rem;
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-bold);
 }

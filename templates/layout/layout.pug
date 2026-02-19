@@ -1,7 +1,8 @@
 doctype html
 html(lang="en")
   head
-    title Armelle Prunier - Background &amp; Concept Artist
+    block title
+      title Armelle Prunier - Background &amp; Concept Artist
     meta(name="description" content="Armelle Prunier, a Background & Concept Artist.")
     meta(charset="utf-8")
     meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
@@ -17,13 +18,13 @@ html(lang="en")
     meta(name="apple-mobile-web-app-capable", content="yes")
 
     link(inline, rel="stylesheet", href="/css/main.css")
-
-    meta(property="og:title", content="Armelle Prunier - Background & Concept Artist")
-    meta(property="og:description", content="Armelle Prunier, a Background & Concept Artist.")
-    meta(property="og:type", content="website")
-    meta(property="og:url", content="https://armelleprunier.plou.dev")
-    meta(property="og:image", content="https://armelleprunier.plou.dev/img/logo.png")
-    meta(property="og:image:alt", content="armelleprunier.plou.dev")
+    block meta
+      meta(property="og:title", content="Armelle Prunier - Background & Concept Artist")
+      meta(property="og:description", content="Armelle Prunier, a Background & Concept Artist.")
+      meta(property="og:type", content="website")
+      meta(property="og:url", content="https://armelleprunier.plou.dev")
+      meta(property="og:image", content="https://armelleprunier.plou.dev/img/logo.png")
+      meta(property="og:image:alt", content="armelleprunier.plou.dev")
 
     link(rel="preconnect", href="https://rsms.me/", crossorigin)
     link( rel="preload", href="https://rsms.me/inter/inter.css", as="style")
@@ -38,11 +39,11 @@ html(lang="en")
   body
     header.header
       block header
-        h1.header-title
-          a.header__link(href='/') Armelle Prunier
+        p.header-title
+            a.header__link(href='/') Armelle Prunier
         p.header-subtitle Background &amp; Concept Artist
 
     .content
       block content
 
-    block script 
+    block script
