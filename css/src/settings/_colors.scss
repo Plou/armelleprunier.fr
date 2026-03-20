@@ -3,9 +3,12 @@
     --white: #fff;
     --black: #000;
     --grey: #8E8787;
+    --green: #65ae82;
+    --green-dark: #3b644b;
     
     // Branding colors
     
-    --color-main: var(--000);
+    --color-main: var(--green);
+    --color-main-dark: var(--green-dark);
     --color-link: var(--color-main);
 }
