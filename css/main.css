@@ -824,6 +824,7 @@ button {
   align-items: stretch;
   justify-content: flex-end;
   background-size: cover;
+  color: var(--black);
 }
 .work:hover {
   text-decoration: none;
